@@ -1,0 +1,566 @@
+2017-08-09 11:53:11 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 11:53:11 DEBUG    smarthome    Main         Python 3.4.2 -- smarthome.py:__init__:223
+2017-08-09 11:53:11 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 11:53:11 DEBUG    scheduler    Scheduler    creating 5 workers -- scheduler.py:run:96
+2017-08-09 11:53:11 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: influxdb -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: BackendServer -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: knx -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: ow -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: visu -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: cli -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 11:53:11 DEBUG    plugin       Main         Plugin: sql -- plugin.py:__init__:58
+2017-08-09 11:53:11 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 11:53:11 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 11:53:11 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 11:53:11 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 11:53:11 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 11:53:11 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 11:53:11 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 11:53:11 DEBUG    scheduler    Main         env_daily next time: 2017-08-10 06:00:00+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:11 DEBUG    scheduler    Main         env_stat next time: 2017-08-09 11:53:24+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:11 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 11:53:11 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 11:53:11 DEBUG    logic        Main         Reading Logics from /usr/local/smarthome/lib/env/logic.* -- logic.py:_read_logics:68
+2017-08-09 11:53:11 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 11:53:11 DEBUG    logic        Main         Reading Logics from /usr/local/smarthome/etc/logic.* -- logic.py:_read_logics:68
+2017-08-09 11:53:11 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 11:53:11 DEBUG    logic        Main         Logic: env_stat -- logic.py:__init__:46
+2017-08-09 11:53:11 DEBUG    scheduler    Main         env_stat next time: 2017-08-09 11:53:22+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:11 DEBUG    logic        Main         Logic: env_init -- logic.py:__init__:46
+2017-08-09 11:53:11 DEBUG    logic        Main         Logic: env_daily -- logic.py:__init__:46
+2017-08-09 11:53:11 DEBUG    scheduler    Main         env_daily next time: 2017-08-10 06:00:00+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:11 DEBUG    logic        Main         Logic: env_loc -- logic.py:__init__:46
+2017-08-09 11:53:11 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunrise = 2017-08-10 05:40:21.476311+02:00 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunrise.azimut.degrees = 85.97 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    smarthome    sh.gc        Garbage collector: collected 31 objects. -- smarthome.py:_garbage_collection:530
+2017-08-09 11:53:17 DEBUG    item         env_init     Item env.core.version = 1.3.cceecb4 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunrise.elevation.degrees = 16.61 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunrise.azimut.radians = 1.5 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunrise.elevation.radians = 0.29 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunset = 2017-08-09 20:43:54.631067+02:00 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunset.azimut.degrees = 323.2 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunset.elevation.degrees = -14.76 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_init     Item env.core.start = 2017-08-09 11:53:17.087344+02:00 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunset.azimut.radians = 5.64 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sunset.elevation.radians = -0.26 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sun_position.azimut.degrees = 149.72 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sun_position.elevation.degrees = 50.08 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sun_position.azimut.radians = 2.61 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.sun_position.elevation.radians = 0.87 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.moonrise = 2017-08-09 21:33:17.676412+02:00 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.moonset = 2017-08-10 08:31:19.776189+02:00 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.moonphase = 5 via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    item         env_loc      Item env.location.day = True via Logic None None -- item.py:__update:707
+2017-08-09 11:53:17 DEBUG    smarthome    sh.gc        Object references: 14731 -- smarthome.py:_maintenance:522
+2017-08-09 11:53:17 DEBUG    scheduler    Scheduler    sh.gc next time: 2017-08-10 02:04:00+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:17 DEBUG    scheduler    Scheduler    env_loc next time: 2017-08-09 12:23:17+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:22 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 11:53:22 DEBUG    scheduler    Scheduler    env_stat next time: 2017-08-09 11:58:22+02:00 -- scheduler.py:_next_time:343
+2017-08-09 11:53:50 INFO     smarthome    Main         Number of Threads: 7 -- smarthome.py:stop:371
+2017-08-09 11:53:50 INFO     plugin       Main         Stop Plugins -- plugin.py:stop:108
+2017-08-09 11:53:51 INFO     smarthome    Main         SmartHomeNG stopped -- smarthome.py:stop:395
+2017-08-09 12:00:03 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 12:00:03 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 12:00:03 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 12:00:03 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 12:00:03 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 12:00:03 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:00:03 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:00:03 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:00:03 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:00:03 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 12:00:03 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 12:00:03 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 12:00:03 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:00:03 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 12:00:03 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 12:00:08 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:00:13 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:01:30 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 12:01:30 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 12:01:30 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 12:01:30 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 12:01:30 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 12:01:30 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:01:30 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:01:30 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:01:30 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:01:30 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 12:01:30 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 12:01:30 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 12:01:30 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:01:30 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 12:01:30 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 12:01:35 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:01:45 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:05:50 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 12:05:50 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 12:05:50 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 12:05:50 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 12:05:50 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 12:05:50 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:05:50 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:05:50 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:05:50 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:05:50 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 12:05:50 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 12:05:50 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 12:05:50 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:05:50 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 12:05:50 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 12:05:55 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:06:03 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:06:52 INFO     smarthome    Main         Number of Threads: 7 -- smarthome.py:stop:371
+2017-08-09 12:06:52 INFO     plugin       Main         Stop Plugins -- plugin.py:stop:108
+2017-08-09 12:06:53 INFO     smarthome    Main         SmartHomeNG stopped -- smarthome.py:stop:395
+2017-08-09 12:07:15 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 12:07:15 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 12:07:15 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 12:07:15 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 12:07:15 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 12:07:15 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:07:15 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:07:15 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:07:15 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:07:15 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 12:07:15 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 12:07:15 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 12:07:15 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:07:15 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 12:07:15 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 12:07:20 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:07:27 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:07:35 INFO     smarthome    Main         Number of Threads: 8 -- smarthome.py:stop:371
+2017-08-09 12:07:35 INFO     plugin       Main         Stop Plugins -- plugin.py:stop:108
+2017-08-09 12:07:36 INFO     smarthome    Main         SmartHomeNG stopped -- smarthome.py:stop:395
+2017-08-09 12:09:56 WARNING  smarthome    Main         --------------------   Init SmartHomeNG 1.3.cceecb4   -------------------- -- smarthome.py:__init__:222
+2017-08-09 12:09:56 INFO     scheduler    Main         Init Scheduler -- scheduler.py:__init__:89
+2017-08-09 12:09:56 INFO     smarthome    Main         Init Plugins -- smarthome.py:start:306
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin influxdb exception: No module named 'plugins.influx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.influx'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin BackendServer exception: No module named 'plugins.backend' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.backend'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin knx exception: No module named 'plugins.knx' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.knx'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin ow exception: No module named 'plugins.onewire' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.onewire'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin visu exception: No module named 'plugins.visu_websocket' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.visu_websocket'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin cli exception: No module named 'plugins.cli' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.cli'
+2017-08-09 12:09:56 ERROR    plugin       Main         Plugin sql exception: No module named 'plugins.sqlite' -- plugin.py:__init__:94
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/plugin.py", line 90, in __init__
+    plugin_thread = PluginWrapper(smarthome, plugin, classname, classpath, args, instance)
+  File "/usr/local/smarthome/lib/plugin.py", line 127, in __init__
+    exec("import {0}".format(classpath))
+  File "<string>", line 1, in <module>
+ImportError: No module named 'plugins.sqlite'
+2017-08-09 12:09:56 INFO     smarthome    Main         Init Items -- smarthome.py:start:312
+2017-08-09 12:09:56 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/core.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:09:56 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/location.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:09:56 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:09:56 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/system.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:09:56 ERROR    shyaml       Main         YAML-file load error in /usr/local/smarthome/lib/env/system.yaml:  
+'ascii' codec can't decode byte 0xc3 in position 252: ordinal not in range(128) -- shyaml.py:yaml_load:65
+2017-08-09 12:09:56 INFO     smarthome    Main         Items: 44 -- smarthome.py:start:333
+2017-08-09 12:09:56 INFO     logic        Main         Start Logics -- logic.py:__init__:35
+2017-08-09 12:09:56 INFO     shyaml       Main         Loading '/usr/local/smarthome/lib/env/logic.yaml' to 'OrderedDict' -- shyaml.py:yaml_load:46
+2017-08-09 12:09:56 CRITICAL config       Main         No file '/usr/local/smarthome/etc/logic.*' found with logics configuration -- config.py:parse_basename:51
+2017-08-09 12:09:56 INFO     plugin       Main         Start Plugins -- plugin.py:start:102
+2017-08-09 12:10:02 ERROR    scheduler    env_init     Logic: env_init, File: /usr/local/smarthome/lib/env/init.py, Line: 10, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/init.py", line 10, in <module>
+    sh.env.system.name(hostname)
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:10:09 ERROR    scheduler    env_stat     Logic: env_stat, File: /usr/local/smarthome/lib/env/stat.py, Line: 5, Method: <module>, Exception: 'Item' object has no attribute 'system' -- scheduler.py:_task:394
+Traceback (most recent call last):
+  File "/usr/local/smarthome/lib/scheduler.py", line 382, in _task
+    exec(obj.bytecode)
+  File "/usr/local/smarthome/lib/env/stat.py", line 5, in <module>
+    if sh.env.system.libs.ephem_version is not None:
+AttributeError: 'Item' object has no attribute 'system'
+2017-08-09 12:10:55 INFO     smarthome    Main         Number of Threads: 8 -- smarthome.py:stop:371
+2017-08-09 12:10:55 INFO     plugin       Main         Stop Plugins -- plugin.py:stop:108
+2017-08-09 12:10:55 INFO     smarthome    Main         SmartHomeNG stopped -- smarthome.py:stop:395
